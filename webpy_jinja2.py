@@ -4,6 +4,9 @@ import web
 from jinja2 import Environment, FileSystemLoader
 
 
+_context_processors = []
+
+
 @web.memoize
 def get_jinja_env():
     """Returns the jinja2 environment object.
